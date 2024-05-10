@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="DisplayAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onClickedAnchor" prefHeight="113.0" prefWidth="600.0" style="-fx-background-color: Orange;" styleClass="fx" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todoapp.TodoListController">
+   <children>
+      <Pane prefHeight="113.0" prefWidth="600.0">
+         <children>
+            <TextArea fx:id="DisplayDescription" layoutX="10.0" layoutY="65.0" prefHeight="37.0" prefWidth="510.0" />
+            <Button fx:id="displayDeleteButton" layoutX="528.0" layoutY="65.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="37.0" prefWidth="64.0" text="Delete" />
+            <Text fx:id="textID" layoutX="581.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="258.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority : " wrappingWidth="64.21630859375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="DisplayPriority" layoutX="315.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="27.21630859375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="358.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date : " wrappingWidth="43.21630859375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="DisplayDate" layoutX="401.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="197.2163085937501">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="DisplayTitle" layoutX="13.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.2163085937501">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
