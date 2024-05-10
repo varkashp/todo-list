@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -50,6 +51,8 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Text>
+            <Button fx:id="btnPriority" layoutX="462.0" layoutY="22.0" mnemonicParsing="false" onAction="#onPriorityClick" text="Priority" />
+            <DatePicker fx:id="CreatedatePicker" layoutX="97.0" layoutY="267.0" onAction="#onDateSetCreate" />
          </children>
       </AnchorPane>
    </center>

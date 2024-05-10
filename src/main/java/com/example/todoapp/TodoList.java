@@ -39,6 +39,10 @@ public class TodoList {
         return todoList.get(index);
     }
 
+    public void deleteItem(int index) {
+        todoList.remove(index);
+    }
+
 
 
 
